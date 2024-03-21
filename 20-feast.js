@@ -8,6 +8,7 @@
 //   );
 // }
 
-const feast = (beast, dish) => beast.slice(0, 1);
+const feast = (beast, dish) =>
+  beast.at(0) === dish.at(0) && beast.at(-1) === dish.at(-1);
 
 console.log(feast("great blue heron", "garlic naan"));
